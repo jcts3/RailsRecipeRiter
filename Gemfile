@@ -7,7 +7,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 
-gem 'nokogiri', '1.6.8.1'
+gem 'nokogiri', '1.10.8'
 
 group :development, :test do
   gem 'byebug', platform: :mri
