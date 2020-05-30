@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 2020_05_30_120410) do
   enable_extension "plpgsql"
 
   create_table "recipes", force: :cascade do |t|
-    t.string "name"
-    t.text "ingredients"
-    t.text "instruction"
-    t.string "image"
+    t.string "name", null: false
+    t.text "ingredients", null: false
+    t.text "instruction", null: false
+    t.string "image", default: "https://raw.githubusercontent.com/do-community/react_rails_recipe/master/app/assets/images/Sammy_Meal.jpg"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
